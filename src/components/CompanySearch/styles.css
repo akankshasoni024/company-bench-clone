@@ -1,0 +1,57 @@
+h1 {
+  font-size: 2em;
+}
+.pp {
+  color: #66789c;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 1rem;
+}
+.container {
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid #007bff;
+  padding: 10px 20px 10px 16px;
+  min-width: fit-content;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #f4f8fb;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: lighter;
+  align-items: center;
+  box-shadow: 2px 2px 4px #e5e5e5;
+}
+
+.box:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .box {
+    flex: 0 1 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .box {
+    flex: 0 1 45%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .box {
+    flex: 0 1 20%;
+  }
+}
